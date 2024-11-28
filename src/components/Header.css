@@ -1,0 +1,67 @@
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #3a3a3c, #1c1c1e); /* Gradient for a sleek look */
+    color: #f5f5f7; 
+    animation: fadeIn 1.5s ease-in-out;
+    border-bottom: 1px solid #333;
+  }
+  
+  .header-logo {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for the logo */
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+  }
+  
+  .header-tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #a5a5a7; 
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Header */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 1.5rem 1rem;
+    }
+  
+    .header-title {
+      font-size: 2rem;
+    }
+  
+    .header-tagline {
+      font-size: 1rem;
+    }
+  
+    .header-logo {
+      width: 60px;
+    }
+  }
+  
